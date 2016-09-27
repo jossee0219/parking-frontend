@@ -18,9 +18,9 @@
   "bugs": {
     "url": "https://github.com/jossee0219/parking-frontend/issues"
   },
-  "homepage": "https://github.com/jossee0219/parking-frontend#readme"
-  },
+  "homepage": "https://github.com/jossee0219/parking-frontend#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
   }
 }
