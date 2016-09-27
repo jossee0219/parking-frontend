@@ -1,0 +1,25 @@
+{
+  "name": "parking-example",
+  "homepage": "https://github.com/jossee0219/parking-frontend",
+  "authors": [
+    "jossee0219 <jossee0219@gmail.com>"
+  ],
+  "description": "test description",
+  "main": "index.js",
+  "keywords": [
+    "parking"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "angular": "^1.5.8",
+    "bootstrap": "^3.3.7"
+  }
+}

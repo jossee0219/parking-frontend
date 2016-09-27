@@ -1,0 +1,26 @@
+{
+  "name": "parking-example",
+  "version": "1.0.0",
+  "description": "Test description",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jossee0219/parking-frontend.git"
+  },
+  "keywords": [
+    "parking"
+  ],
+  "author": "Jose Muñoz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jossee0219/parking-frontend/issues"
+  },
+  "homepage": "https://github.com/jossee0219/parking-frontend#readme"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
