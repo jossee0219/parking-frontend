@@ -1,0 +1,64 @@
+<!--------------------------------->
+<!--         LOG IN PAGE         -->
+<!--------------------------------->
+
+<div class="logInPage">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div id="separator_left" class="col-md-3"></div>
+
+            <!-- FORM LOG IN CONTAINER -->
+            <div id="formLogIn-container"
+                 class="col-md-6">
+
+                <div class="box">
+                    <form>
+
+                        <!-- Email Input -->
+                        <div class="form-group">
+                            <label for="emailInput">Email</label>
+                            <input id="emailInput" type="email"
+                                   ng-model="vm.userData.email"
+                                   class="input input--default">
+                        </div>
+
+                        <!-- Password Input -->
+                        <div class="form-group">
+                            <label for="passwordInput">Password</label>
+                            <input id="passwordInput" type="password"
+                                   ng-model="vm.userData.password"
+                                   class="input input--default">
+                        </div>
+
+                        <!-- Log In Button -->
+                        <div class="form-group">
+                            <button id="logInButton"
+                                    type="button"
+                                    class="btn
+                                           button button--border-primary
+                                           button--block
+                                           button--primary-color button--default"
+                                    ng-click="vm.logIn()">
+                                Continue
+                            </button>
+                        </div>
+
+                        <div class="message">
+                            {{vm.message}}
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+
+            <div id="separator_right" class="col-md-3"></div>
+
+        </div>
+
+    </div>
+
+</div>

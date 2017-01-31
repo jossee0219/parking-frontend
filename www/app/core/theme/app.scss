@@ -1,15 +1,26 @@
-//Core Styles
-//--------------------------------
+// Core Styles
+//----------------------------
 @import 'core/variables';
+@import 'core/global';
 
 
 //Components Styles
-//--------------------------------
-@import 'components/buttons/buttons';
+//----------------------------
 
+//Buttons styles
+@import 'components/buttons/buttons';
+//NavBar styles
+@import 'components/navBar/navBar';
+//Inputs styles
+@import 'components/inputs/inputs';
+//Boxes styles
+@import 'components/boxes/boxes';
 
 //Pages Styles
-//--------------------------------
+//----------------------------
 
 //Main Styles
 @import '../../pages/main/main';
+
+//Edit Parking Page Styles
+@import '../../pages/editParkingPage/editParkingPage';

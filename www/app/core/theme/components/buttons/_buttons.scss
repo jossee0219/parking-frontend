@@ -1,7 +1,83 @@
-/***********************************************/
-/*                BUTTONS STYLES               */
-/***********************************************/
+/***************************/
+/*      BUTTON STYLES      */
+/***************************/
 
-.button{
-  background-color: red;
+.button {
+
+  text-decoration: none!important;
+  cursor: pointer;
+  display: inline-block;
+
+    /** MODIFIERS **/
+
+    /* BUTTON SIZES */
+    &--small {
+      font-size: 15px;
+      padding: 8px;
+      &__text {
+        text-transform: lowercase!important;
+      }
+    }
+
+    &--default {
+      font-size: 16px;
+      padding: 12px;
+    }
+
+    &--large {
+      font-size: 18px;
+      padding: 12px 60px;
+    }
+
+    &--block {
+        display: block;
+        width: 100%;
+    }
+
+    &--add{
+        border-radius: 100%;
+        background: transparent;
+        border: 2px solid #00B592;
+        color: #00b592;
+        float: right;
+        font-size: 20px;
+    }
+    /* BUTTON TYPES */
+    &--border-primary {
+      border-bottom: 3px #047c65 solid;
+      border-radius: 5px;
+    }
+    &--border-secondary {
+      border-color: #00B592;
+      border-bottom: 3px #047c65 solid;
+      border-right: 3px #047c65 solid;
+      border-top: 1px #047c65 solid;
+      border-left: 1px #047c65 solid;
+      border-radius: 5px;
+    }
+
+    /* BUTTON COLORS */
+    &--primary-color {
+      background-color: #00B592;
+    }
+    &--secondary-color {
+      background-color: transparent;
+    }
+
+    /* ELEMENTS */
+    &__text-white {
+      color: white;
+      text-transform: uppercase;
+    }
+    &__text-green {
+      color: #00B592;
+      text-transform: uppercase;
+    }
+
+    /* EVENTS */
+    &:hover {
+        background-color: #047c65;
+        color: white;
+    }
+
 }

@@ -1,14 +1,84 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="app/core/theme/app.css" media="screen"
-          title="no title">
-  </head>
-  <body>
-      <div class="testHolaMundo">
-          HOLA MUNDO TEXTO
-      </div>
-  </body>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" media="screen" />
+    <link rel="stylesheet" href="app/core/theme/app.css" media="screen" />
+
+</head>
+
+<body ng-app="psApp">
+
+    <!-------------------->
+    <!--     HEADER     -->
+    <!-------------------->
+    <header>
+
+        <!-- NAVBAR -->
+        <nav class="ps-navbar navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img alt="Brand" src="assets/images/logo.png">
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse">
+                    <a class="ps-navbar__photo navbar-right" href="#">
+                        <img alt="Brand" src="assets/images/profile-photo.jpg" width="50" height="50">
+                    </a>
+                    <a ui-sref="logInPage"
+                       class="ps-navbar__logIn navbar-right"
+                       href="#">
+                        Log In
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <!-------------------->
+    <!--      MAIN      -->
+    <!-------------------->
+    <div class="main">
+
+        <div ui-view="container" class="app-content">
+
+        </div>
+
+    </div>
+
+
+
+<!--bower_components-->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-resource/angular-resource.min.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+<!-- Main App javascript files-->
+<script src="app/app.module.js"></script>
+<script src="app/app.core.module.js"></script>
+<script src="app/app.values.js"></script>
+<script src="app/app.run.js"></script>
+<script src="app/core/restApi/restApi.config.js"></script>
+<script src="app/core/restApi/restApi.service.js"></script>
+
+<!-- Components -->
+
+<!-- Pages -->
+<script src="app/pages/editParkingPage/editParkingPage.config.js"></script>
+<script src="app/pages/editParkingPage/editParkingPage.controller.js"></script>
+<script src="app/pages/editParkingPage/editParkingPage.service.js"></script>
+
+<script src="app/pages/logInPage/logInPage.config.js"></script>
+<script src="app/pages/logInPage/logInPage.controller.js"></script>
+<script src="app/pages/logInPage/logInPage.service.js"></script>
+
+</body>
+
 </html>

@@ -1,0 +1,92 @@
+{
+    "vehicles": [{
+        "id": 1,
+        "vin": "asf 232",
+        "model": "Peugeot",
+        "year": "2010",
+        "user": {
+            "id": 1,
+            "first_name": "yonny",
+            "last_name": "quiceno",
+            "password": null,
+            "email": "yonnyquiceno@gmail.com",
+            "birthdate": "1992-10-07",
+            "created_at": "2016-09-16T22:11:52.701Z",
+            "updated_at": "2016-09-16T22:13:26.755Z",
+            "is_admin": null,
+            "authentication_token": "NeHg64fvaTi5wmFS2rb-yyiD4H6-QVTz-A"
+        }
+    },
+    {
+        "id": 2,
+        "vin": "dsh 918",
+        "model": "Camaro",
+        "year": "2015",
+        "user": {
+            "id": 2,
+            "first_name": "Carlos",
+            "last_name": "Perez",
+            "password": null,
+            "email": "carlosperez@gmail.com",
+            "birthdate": "1995-11-28",
+            "created_at": "2015-06-16T22:11:52.701Z",
+            "updated_at": "2015-09-16T22:13:26.755Z",
+            "is_admin": null,
+            "authentication_token": "NeHg64fvaTi5wmFS2rb-yyiD4H6-QVTz-A"
+        }
+    },
+    {
+        "id": 3,
+        "vin": "lmn 311",
+        "model": "Mazda 6",
+        "year": "2016",
+        "user": {
+            "id": 3,
+            "first_name": "marina",
+            "last_name": "quintero",
+            "password": null,
+            "email": "marinaquintero@gmail.com",
+            "birthdate": "1990-01-11",
+            "created_at": "2016-09-16T22:11:52.701Z",
+            "updated_at": "2016-09-16T22:13:26.755Z",
+            "is_admin": null,
+            "authentication_token": "NeHg64fvaTi5wmFS2rb-yyiD4H6-QVTz-A"
+        }
+    },
+    {
+        "id": 4,
+        "vin": "ets 567",
+        "model": "Kia Rio",
+        "year": "2011",
+        "user": {
+            "id": 4,
+            "first_name": "mauricio",
+            "last_name": "torres",
+            "password": null,
+            "email": "mauriciotorres@gmail.com",
+            "birthdate": "1992-10-07",
+            "created_at": "2014-11-16T22:11:52.701Z",
+            "updated_at": "2016-06-16T22:13:26.755Z",
+            "is_admin": null,
+            "authentication_token": "NeHg64fvaTi5wmFS2rb-yyiD4H6-QVTz-A"
+        }
+    },
+    {
+        "id": 5,
+        "vin": "mns 418",
+        "model": "Aston Martin DB9",
+        "year": "2016",
+        "user": {
+            "id": 5,
+            "first_name": "jennifer",
+            "last_name": "contreras",
+            "password": null,
+            "email": "jennifercontreras@gmail.com",
+            "birthdate": "1988-05-28",
+            "created_at": "2016-09-16T22:11:52.701Z",
+            "updated_at": "2016-09-16T22:13:26.755Z",
+            "is_admin": null,
+            "authentication_token": "NeHg64fvaTi5wmFS2rb-yyiD4H6-QVTz-A"
+        }
+    }]
+}

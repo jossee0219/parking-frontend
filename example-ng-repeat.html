@@ -1,0 +1,23 @@
+<div ng-repeat= "vehicle in vm.vehicleList | orderBy: 'year'">
+
+</div>
+
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Vin</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="vehicle in vm.vehiclesList">
+            <th scope="row">{{vehicle.id}}</th>
+            <td>{{vehicle.model}}</td>
+            <td>{{vehicle.year}}</td>
+            <td>{{vehicle.vin}}</td>
+        </tr>
+    </tbody>
+</table>

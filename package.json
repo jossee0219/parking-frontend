@@ -1,26 +1,30 @@
 {
   "name": "parking-example",
   "version": "1.0.0",
-  "description": "Test description",
+  "description": "description test",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jossee0219/parking-frontend.git"
+    "url": "git+https://github.com/sergioruizdavila/frontEnd-Structure-Course.git"
   },
   "keywords": [
     "parking"
   ],
-  "author": "Jose Muñoz",
+  "author": "sergio ruiz",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jossee0219/parking-frontend/issues"
+    "url": "https://github.com/sergioruizdavila/frontEnd-Structure-Course/issues"
   },
-  "homepage": "https://github.com/jossee0219/parking-frontend#readme",
+  "homepage": "https://github.com/sergioruizdavila/frontEnd-Structure-Course#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
     "gulp-sass": "^2.3.2"
+  },
+  "dependencies": {
+    "typescript": "^2.0.3"
   }
 }

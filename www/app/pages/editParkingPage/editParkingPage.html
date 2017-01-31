@@ -1,0 +1,105 @@
+<!--------------------------------->
+<!--      EDIT PARKING PAGE      -->
+<!--------------------------------->
+
+<div class="editParkingPage">
+    <div class="row">
+        <!-- CARS LIST CONTAINER -->
+        <div id="carsList-container"
+             class="col-xs-12 col-sm-12
+                    col-md-6 col-lg-6
+                    editParkingPage__container
+                    editParkingPage__container--padding-left">
+            <div class="box">
+                <h1>{{ vm.owner }} Vehicle's
+                    <button type="button"
+                            class="btn button button--add"
+                            ng-click="vm.cleanForm()"> + </button>
+                </h1>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Model</th>
+                            <th>Year</th>
+                            <th>Vin</th>
+                            <th>Edit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="vehicle in vm.vehicleList">
+                            <th scope="row">{{ vehicle.id }}</th>
+                            <td>{{ vehicle.model }}</td>
+                            <td>{{ vehicle.year }}</td>
+                            <td>{{ vehicle.vin }}</td>
+                            <td>
+                                <button type="button"
+                                        class="btn button button--border-secondary
+                                               button--secondary-color button--small"
+                                        ng-click="vm.editVehicle(vehicle)">
+                                               Edit
+                                </button>
+                            </td>
+
+                            <td>
+                                <button type="button"
+                                        class="btn button button--border-secondary
+                                               button--secondary-color button--small"
+                                        ng-click="vm.deleteVehicle(vehicle)">
+                                        Delete
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- FORM EDIT CAR CONTAINER -->
+        <div id="formEditCar-container"
+             class="col-xs-12 col-sm-12
+                    col-md-6 col-lg-6
+                    editParkingPage__container
+                    editParkingPage__container--padding-right">
+
+            <div class="box">
+                <form name="vehicleForm" ng-submit="vm.submitForm()" novalidate>
+                    <h1>{{vm.formTitle}}</h1>
+                    <div class="form-group">
+                        <label for="vehicleModel">vehicle model </label>
+                        <input type="text" class="input input--default input--round"
+                                id="vehicleModel" placeholder="Modelo del vehículo"
+                                ng-model="vm.vehicleData.model" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="vehicleYear">vehicle year</label>
+                        <input type="text" class="input input--default input--round"
+                               id="vehicleYear" placeholder="Año del vehículo"
+                               ng-model="vm.vehicleData.year" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="vinVehicle">vehicle vin</label>
+                        <input type="text" class="input input--default input--round"
+                                id="vinVehicle" placeholder="Vin del vehículo"
+                                ng-model="vm.vehicleData.vin" required>
+                    </div>
+
+                    <div class="message">
+                        {{vm.message}}
+                    </div>
+
+                    <button type="submit"
+                            class="btn button button--border-secondary
+                                   button--secondary-color button--default"
+                            ng-disabled="vehicleForm.$invalid">
+                            {{vm.buttonType}}
+                        </button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</div>

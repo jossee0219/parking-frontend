@@ -1,0 +1,35 @@
+.input{
+  background-color: #00B592;
+  color: white;
+
+
+  /* MODIFIERS */
+  &--small{
+    padding: 12px;
+    font-size: 18px;
+  }
+
+  &--default{
+
+  }
+
+  &--large{
+
+  }
+
+  &--primary{
+
+  }
+
+  &--secondary{
+
+  }
+
+  /* ELEMENTS */
+
+  &_text
+  {
+
+  }
+
+}
